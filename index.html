@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>SWEET - Wo Ich Bin</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fredoka+One&display=swap');
+    html {
+      height: 100vh;
+    }
+
+    body {
+      max-height: 100% !important;
+    }
+
+    .background-container {
+      position: absolute;
+      width: 100%;
+      background: #050505;
+      height: 100%;
+      top: 0;
+      overflow: hidden;
+    }
+
+    .background-wrap {
+      background-image: url('/artwork.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: calc(100% + 30px);
+      height: calc(100% + 30px);
+      margin: -15px;
+      z-index: -1;
+      filter: blur(10px) brightness(50%);
+      backface-visibility: hidden;
+    }
+
+    .music-view {
+      border-radius: .75rem;
+      background: #050505;
+      color: white;
+      align-self: center;
+      z-index: 1;
+    }
+
+    .image-view > img {
+      border-radius: .5rem;
+      max-width: 100%;
+    }
+
+    .info-view{
+      font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .artist {
+      color: grey;
+    }
+
+    .credits {
+      font-size: 12px;
+      font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+    }
+
+    .links > div > h5{
+      background-color: #141414;
+      border-radius: .5rem;
+    }
+  </style>
+</head>
+<body class="w-100 h-100 position-relative d-flex flex-row justify-content-center">
+  <div class="background-container w-100 h-100"><div class="background-wrap"></div></div>
+  <div class="row m-2 mx-lg-5 music-view">
+    <div class="col-12 col-lg-6 p-3 image-view"><img src="/artwork.jpg"></div>
+    <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center info-view">
+      <div>
+        <div class="row title">
+          <div class="col-12 p-3">
+          <h2 class="songtitle">Wo Ich Bin</h1>
+          <h4 class="artist">SWEET</h3>
+          </div>
+        </div>
+        <div class="row mb-3 links">
+          <div class="col-12"><h5 class="px-0 py-3"><a href="https://spotify.com" target="_blank">Spotify</a></h5></div>
+          <div class="col-12"><h5 class="px-0 py-3"><a href="https://music.apple.com" target="_blank">Apple Music</a></h5></div>
+          <div class="col-12"><h5 class="px-0 py-3"><a href="https://soundcloud.com" target="_blank">Soundcloud</a></h5></div>
+        </div>
+        <div class="row credits p-2">
+          <div class="col-12 text-center"><p>Made with ❤ by <a href="https://github.com/puf17640">Julian Pufler</a> in Vienna</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
