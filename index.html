@@ -70,8 +70,15 @@
       font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
     }
 
-    .links > div > h5{
+    .links > div > a > h5{
       background-color: #141414;
+      transition: color .5s ease-in-out;
+      border-radius: .5rem;
+    }
+    
+    .links > div > a > h5:hover{
+      background-color: #242424;
+      box-shadow: 0 0 10px rgba(255,255,255,0.25);
       border-radius: .5rem;
     }
 
@@ -93,9 +100,9 @@
           </div>
         </div>
         <div class="row mb-3 links">
-          <div class="col-12"><h5 class="px-0 py-3"><a href="https://open.spotify.com/track/7ezwSeDDPhMylGIPkbRh4M?si=MtW0atk9RomxpaUcyAMnzQ" target="_blank">Spotify</a></h5></div>
-          <div class="col-12"><h5 class="px-0 py-3"><a href="https://music.apple.com/at/album/wo-ich-bin-feat-jast-single/1506320326" target="_blank">Apple Music</a></h5></div>
-          <div class="col-12"><h5 class="px-0 py-3"><a href="https://www.instagram.com/sweet1.1k/" target="_blank">Instagram</a></h5></div>
+          <div class="col-12"><a href="https://open.spotify.com/track/7ezwSeDDPhMylGIPkbRh4M?si=MtW0atk9RomxpaUcyAMnzQ" target="_blank"><h5 class="px-0 py-3">Spotify</h5></a></div>
+          <div class="col-12"><a href="https://music.apple.com/at/album/wo-ich-bin-feat-jast-single/1506320326" target="_blank"><h5 class="px-0 py-3">Apple Music</h5></a></div>
+          <div class="col-12"><a href="https://www.instagram.com/sweet1.1k/" target="_blank"><h5 class="px-0 py-3">Instagram</h5></a></div>
         </div>
         <div class="row credits p-2">
           <div class="col-12 text-center"><p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://github.com/puf17640">Julian Pufler</a> in Vienna</p></div>
