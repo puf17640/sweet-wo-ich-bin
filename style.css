@@ -33,6 +33,7 @@ body {
 }
 
 .music-view {
+  width: 100%;
   border-radius: .75rem;
   background: #050505;
   color: white;
