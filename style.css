@@ -87,3 +87,12 @@ a, a:hover, a:visited {
   color: #fff;
   text-decoration: underline;
 }
+
+.outnow {
+  right: -135px;
+  position: absolute;
+  top: 18.5px;
+  font-size: 75%;
+  letter-spacing: 1.15px;
+  font-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+}
