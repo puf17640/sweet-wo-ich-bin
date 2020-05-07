@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Fredoka+One&display=swap');
+
 html {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #000;
 }
 
 body {
-  max-height: 100% !important;
+  min-height: 100vh !important;
+  overflow-x: hidden;
 }
 
 .background-container {
@@ -13,6 +15,7 @@ body {
   width: 100%;
   background: #050505;
   height: 100%;
+  left: 0;
   top: 0;
   overflow: hidden;
 }
@@ -21,8 +24,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: calc(100% + 30px);
-  height: calc(100% + 30px);
+  width: calc(150% + 30px);
+  height: calc(150% + 30px);
   margin: -15px;
   z-index: -1;
   filter: blur(10px) brightness(50%);
@@ -39,7 +42,8 @@ body {
 
 .image-view > img {
   border-radius: .5rem;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .info-view{
