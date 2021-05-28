@@ -7,14 +7,23 @@ import {
   Text,
   Divider,
 } from "@chakra-ui/react";
-import Head from "next/head"
+import Head from "next/head";
 
 const data = [
-  { title: 'Verkehrt - Spotify', url: 'https://open.spotify.com/album/63hkfobbt5EmHTEeDCI5UB?si=vgY1WAuGSt6H9KS36HWDxA' },
-  { title: 'Verkehrt - Youtube', url: 'https://youtu.be/B6-i5z6jZMo' },
-  { title: 'Spotify', url: 'https://open.spotify.com/artist/6SsdZjlnwgPQtlIMkjS9Or?si=5-8D9sY6SHamTuQ6qJmAcw' },
-  { title: 'SoundCloud', url: 'https://soundcloud.com/sweet1100' },
-  { title: 'Apple Music', url: 'https://music.apple.com/us/artist/%24weet/1500805233' },
+  {
+    title: "Verkehrt - Spotify",
+    url: "https://open.spotify.com/album/63hkfobbt5EmHTEeDCI5UB?si=vgY1WAuGSt6H9KS36HWDxA",
+  },
+  { title: "Verkehrt - Youtube", url: "https://youtu.be/B6-i5z6jZMo" },
+  {
+    title: "Spotify",
+    url: "https://open.spotify.com/artist/6SsdZjlnwgPQtlIMkjS9Or?si=5-8D9sY6SHamTuQ6qJmAcw",
+  },
+  { title: "SoundCloud", url: "https://soundcloud.com/sweet1100" },
+  {
+    title: "Apple Music",
+    url: "https://music.apple.com/us/artist/%24weet/1500805233",
+  },
 ];
 
 export default function Home() {
@@ -22,6 +31,7 @@ export default function Home() {
     <>
       <Head>
         <title>SWEET</title>
+        <link rel="icon" href="/logo.ico" />
       </Head>
       <Box bg={"black"}>
         <Stack
@@ -65,7 +75,9 @@ export default function Home() {
                 fontFamily={"Alatsi, sans-serif"}
                 letterSpacing={2}
               >
-                <Box as={"span"} fontSize={"150%"}>$</Box>
+                <Box as={"span"} fontSize={"150%"}>
+                  $
+                </Box>
                 <span>WEET</span>
               </Heading>
               <Heading
@@ -114,7 +126,11 @@ export default function Home() {
           fontSize={{ base: "sm", md: "md" }}
         >
           Website by{" "}
-          <Link target={"_blank"} href={"https://pufler.dev"} textDecoration={"underline"}>
+          <Link
+            target={"_blank"}
+            href={"https://pufler.dev"}
+            textDecoration={"underline"}
+          >
             Julian Pufler
           </Link>
         </Text>
