@@ -47,7 +47,7 @@ export default function Home() {
               minH={{ base: "200px", md: "300px", lg: "400px" }}
               maxH={{ base: "300px", md: "400px", lg: "500px" }}
               flexGrow={1}
-              bg={"url(/static/profile.png)"}
+              bg={"url(/profile.png)"}
               backgroundPosition={"center"}
               backgroundSize={"cover"}
               rounded={"lg"}
