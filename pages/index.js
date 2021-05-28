@@ -10,7 +10,8 @@ import {
 import Head from "next/head"
 
 const data = [
-  { title: 'Verkehrt', url: 'https://youtu.be/B6-i5z6jZMo' },
+  { title: 'Verkehrt - Spotify', url: 'https://open.spotify.com/album/63hkfobbt5EmHTEeDCI5UB?si=vgY1WAuGSt6H9KS36HWDxA' },
+  { title: 'Verkehrt - Youtube', url: 'https://youtu.be/B6-i5z6jZMo' },
   { title: 'Spotify', url: 'https://open.spotify.com/artist/6SsdZjlnwgPQtlIMkjS9Or?si=5-8D9sY6SHamTuQ6qJmAcw' },
   { title: 'SoundCloud', url: 'https://soundcloud.com/sweet1100' },
   { title: 'Apple Music', url: 'https://music.apple.com/us/artist/%24weet/1500805233' },
