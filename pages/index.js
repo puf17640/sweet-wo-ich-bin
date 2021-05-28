@@ -8,7 +8,13 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Head from "next/head"
-import data from "../data";
+
+const data = [
+  { title: 'Verkehrt', url: 'https://youtu.be/B6-i5z6jZMo' },
+  { title: 'Spotify', url: 'https://open.spotify.com/artist/6SsdZjlnwgPQtlIMkjS9Or?si=5-8D9sY6SHamTuQ6qJmAcw' },
+  { title: 'SoundCloud', url: 'https://soundcloud.com/sweet1100' },
+  { title: 'Apple Music', url: 'https://music.apple.com/us/artist/%24weet/1500805233' },
+];
 
 export default function Home() {
   return (
